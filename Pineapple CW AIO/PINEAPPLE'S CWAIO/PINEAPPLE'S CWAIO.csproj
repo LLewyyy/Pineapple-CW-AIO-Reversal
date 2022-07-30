@@ -1,0 +1,216 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x64</Platform>
+    <ProjectGuid>{72E9F63A-4A42-43D2-A5A0-D45B7B1AA6F8}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PINEAPPLE'S CWAIO</RootNamespace>
+    <AssemblyName>PINEAPPLE'S CWAIO</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>8192</FileAlignment>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <ApplicationIcon>PINEAPPLE'S CWAIO.ico</ApplicationIcon>
+    <StartupObject>RAW.Program</StartupObject>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x64' ">
+    <PlatformTarget>x64</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x64' ">
+    <PlatformTarget>x64</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Guna.UI">
+      <HintPath>..\..\Guna.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Guna.UI2">
+      <HintPath>..\..\Guna.UI2.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Siticone.Desktop.UI">
+      <HintPath>..\..\Siticone.Desktop.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Siticone.UI">
+      <HintPath>..\..\Siticone.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceProcess" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="Teen">
+      <HintPath>..\..\Teen.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="-Module-.cs" />
+    <Compile Include="Costura\AssemblyLoader.cs" />
+    <Compile Include="CWTesting\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CWTesting\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FAZEDAuth\LoginMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FAZEDAuth\LoginMenu.Designer.cs">
+      <DependentUpon>LoginMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="kc\kb.cs" />
+    <Compile Include="kernalthingy\AD.cs" />
+    <Compile Include="KeyAuth\MainDA.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KeyAuth\MainDA.Designer.cs">
+      <DependentUpon>MainDA.cs</DependentUpon>
+    </Compile>
+    <Compile Include="kn\km.cs" />
+    <Compile Include="kR\kQ.cs" />
+    <Compile Include="kR\lb.cs" />
+    <Compile Include="kR\lm.cs" />
+    <Compile Include="kR\lp.cs" />
+    <Compile Include="MainDriver\gV.cs" />
+    <Compile Include="nc\a.cs" />
+    <Compile Include="nc\nX.cs" />
+    <Compile Include="nc\oa.cs" />
+    <Compile Include="nc\og.cs" />
+    <Compile Include="nc\Q.cs" />
+    <Compile Include="oj\gE.cs" />
+    <Compile Include="oj\gJ.cs" />
+    <Compile Include="oj\gk.cs" />
+    <Compile Include="oj\gP.cs" />
+    <Compile Include="oj\gt.cs" />
+    <Compile Include="om\oC.cs" />
+    <Compile Include="om\ol.cs" />
+    <Compile Include="om\oy.cs" />
+    <Compile Include="PINEAPPLE'S CWAIO_ProcessedByFody.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="qC\qB.cs" />
+    <Compile Include="qC\qH.cs" />
+    <Compile Include="qL\qK.cs" />
+    <Compile Include="qL\rg.cs" />
+    <Compile Include="qL\rL.cs" />
+    <Compile Include="qL\sl.cs" />
+    <Compile Include="RAW\AntiDebug\DebugProtect1.cs" />
+    <Compile Include="RAW\AntiDebug\DebugProtect2.cs" />
+    <Compile Include="RAW\AntiDebug\DebugProtect3.cs" />
+    <Compile Include="RAW\AntiDebug\DumpProtect1.cs" />
+    <Compile Include="RAW\AntiDebug\NtStatus.cs" />
+    <Compile Include="RAW\AntiDebug\Scanner.cs" />
+    <Compile Include="RAW\AntiDebug\WinStructs\DebugObjectInformationClass.cs" />
+    <Compile Include="RAW\AntiDebug\WinStructs\PROCESSINFOCLASS.cs" />
+    <Compile Include="RAW\AntiDebug\WinStructs\SYSTEM_INFORMATION_CLASS.cs" />
+    <Compile Include="RAW\AntiDebug\WinStructs\SYSTEM_KERNEL_DEBUGGER_INFORMATION.cs" />
+    <Compile Include="RAW\AntiDebug\WinStructs\ThreadAccess.cs" />
+    <Compile Include="RAW\AntiDebug\WinStructs\ThreadInformationClass.cs" />
+    <Compile Include="RAW\Auth\api.cs" />
+    <Compile Include="RAW\Auth\encryption.cs" />
+    <Compile Include="RAW\Auth\json_wrapper.cs" />
+    <Compile Include="RAW\GLOBAL\Booleans.cs" />
+    <Compile Include="RAW\GLOBAL\Coords.cs" />
+    <Compile Include="RAW\GLOBAL\Offsets.cs" />
+    <Compile Include="RAW\GLOBAL\Threads.cs" />
+    <Compile Include="RAW\GLOBAL\Variables.cs" />
+    <Compile Include="RAW\HomeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RAW\HomeForm.Designer.cs">
+      <DependentUpon>HomeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RAW\LogTools\DcWebHook.cs" />
+    <Compile Include="RAW\LogTools\HWID.cs" />
+    <Compile Include="RAW\LogTools\IP.cs" />
+    <Compile Include="RAW\Program.cs" />
+    <Compile Include="RAW\Properties\Resources.cs" />
+    <Compile Include="RAW\Properties\Settings.Designer.cs">
+      <DependentUpon>Settings.settings</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="RAW\Tool\MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RAW\Tool\MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RAW\Tool\WeaponIDForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RAW\Tool\WeaponIDForm.Designer.cs">
+      <DependentUpon>WeaponIDForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RAW\UTILITIES\FingerPrint.cs" />
+    <Compile Include="RAW\UTILITIES\Memory.cs" />
+    <Compile Include="RAW\UTILITIES\Vectors.cs" />
+    <Compile Include="SafeGuard\ResponseInformation.cs" />
+    <Compile Include="SafeGuard\SafeCheck.cs" />
+    <Compile Include="SafeGuard\SafeGuardTitle.cs" />
+    <Compile Include="sU\sT.cs" />
+    <Compile Include="tA\tB.cs" />
+    <Compile Include="tA\tz.cs" />
+    <Compile Include="tv\tu.cs" />
+    <Compile Include="tv\tw.cs" />
+    <Compile Include="tv\tx.cs" />
+    <Compile Include="yktv\Encryption.cs" />
+    <Compile Include="yktv\Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="yktv\Main.Designer.cs">
+      <DependentUpon>Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="yktv\Memory.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Costura\costura\dll.compressed" />
+    <EmbeddedResource Include="Costura\costura\pdb.compressed" />
+    <EmbeddedResource Include="Costura\guna\ui2\dll.compressed" />
+    <EmbeddedResource Include="Costura\metadata" />
+    <EmbeddedResource Include="Costura\newtonsoft\json\dll.compressed" />
+    <EmbeddedResource Include="Costura\siticone\desktop\ui\dll.compressed" />
+    <EmbeddedResource Include="Costura\siticone\ui\dll.compressed" />
+    <EmbeddedResource Include="Costura\system\diagnostics\diagnosticsource\dll.compressed" />
+    <EmbeddedResource Include="Costura\system\numerics\vectors\dll.compressed" />
+    <EmbeddedResource Include="Costura\teen\dll.compressed" />
+    <EmbeddedResource Include="CWTesting\Form1.resources" />
+    <EmbeddedResource Include="FAZEDAuth\LoginMenu.resources" />
+    <EmbeddedResource Include="KeyAuth\MainDA.resources" />
+    <EmbeddedResource Include="KeyAuth\MainDA.resx">
+      <DependentUpon>MainDA.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RAW\HomeForm.resources" />
+    <EmbeddedResource Include="RAW\Properties\Resources.resources" />
+    <EmbeddedResource Include="RAW\Tool\MainForm.resources" />
+    <EmbeddedResource Include="RAW\Tool\WeaponIDForm.resources" />
+    <EmbeddedResource Include="yktv\Main.resources" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.manifest" />
+    <None Include="RAW\Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
